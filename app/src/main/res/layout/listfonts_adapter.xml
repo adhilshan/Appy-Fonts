@@ -1,0 +1,66 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#FFFFFF"
+		android:orientation="vertical">
+		<androidx.cardview.widget.CardView
+			android:id="@+id/cardview1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="16dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginRight="16dp"
+			android:layout_marginBottom="8dp"
+			android:orientation="vertical"
+			app:cardElevation="5dp"
+			app:cardCornerRadius="8dp">
+			<LinearLayout
+				android:id="@+id/bg"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="vertical">
+				<WebView
+					android:id="@+id/webview1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="30dp" />
+				<TextView
+					android:id="@+id/textview4"
+					android:focusable="false"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingLeft="8dp"
+					android:text="Category"
+					android:textSize="12sp"
+					android:textColor="#000000"
+					android:alpha="0.5" />
+				<LinearLayout
+					android:id="@+id/linear3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="right|center_vertical"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/prev_btn"
+						android:focusable="false"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Preview"
+						android:textSize="12sp"
+						android:textColor="#2196F3" />
+				</LinearLayout>
+			</LinearLayout>
+		</androidx.cardview.widget.CardView>
+	</LinearLayout>
+</LinearLayout>

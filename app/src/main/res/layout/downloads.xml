@@ -1,0 +1,47 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="70dp"
+			android:padding="8dp"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+			<ImageView
+				android:id="@+id/imageview1"
+				android:layout_width="45dp"
+				android:layout_height="45dp"
+				android:src="@drawable/poo"
+				android:scaleType="centerInside"
+				android:rotation="45"
+				android:tint="#999999" />
+			<TextView
+				android:id="@+id/textview1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Downloads"
+				android:textSize="25sp"
+				android:textStyle="bold"
+				android:textColor="#999999" />
+		</LinearLayout>
+		<ListView
+			android:id="@+id/listview1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:dividerHeight="0dp"
+			android:divider="@null"
+			android:choiceMode="none" />
+	</LinearLayout>
+</LinearLayout>

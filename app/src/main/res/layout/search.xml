@@ -1,0 +1,77 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#FFFFFF"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="8dp"
+			android:layout_marginTop="5dp"
+			android:layout_marginRight="8dp"
+			android:padding="8dp"
+			android:background="@android:color/transparent"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal"
+			android:transitionName="search">
+			<ImageView
+				android:id="@+id/imageview1"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:src="@drawable/ic_arrow_back_white"
+				android:scaleType="center"
+				android:alpha="0.5"
+				android:tint="#999999" />
+			<EditText
+				android:id="@+id/edittext1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="@android:color/transparent"
+				android:textSize="16sp"
+				android:textColor="#999999"
+				android:hint="Search...."
+				android:textColorHint="#90A4AE"
+				android:lines="1"
+				android:imeOptions="actionSearch"
+				android:layout_weight="1" />
+			<ImageView
+				android:id="@+id/imageview3"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:src="@drawable/ic_search_white"
+				android:scaleType="center"
+				android:alpha="0.5"
+				android:tint="#999999" />
+		</LinearLayout>
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="match_parent"
+			android:layout_height="2dp"
+			android:padding="8dp"
+			android:background="#999999"
+			android:orientation="horizontal" />
+		<LinearLayout
+			android:id="@+id/linear4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="8dp"
+			android:paddingTop="8dp"
+			android:paddingRight="8dp"
+			android:gravity="right|center_vertical"
+			android:orientation="horizontal" />
+		<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/recyclerview1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>
